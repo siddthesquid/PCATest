@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <scala.version>2.10.1</scala.version>
+        <scala.version>2.10.5</scala.version>
         <scala.major.version>2.10</scala.major.version>
         <java.version>1.7</java.version>
     </properties>
@@ -33,48 +33,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming_${scala.major.version}</artifactId>
-            <version>1.4.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-kafka_${scala.major.version}</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
-        <!-- Kafka -->
-
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka_${scala.major.version}</artifactId>
-            <version>0.8.2.1</version>
-        </dependency>
-
-        <!-- Redis -->
-
-        <dependency>
-            <groupId>net.debasishg</groupId>
-            <artifactId>redisclient_2.10</artifactId>
-            <version>3.0</version>
-        </dependency>
-
-        <!-- Storehaus -->
-
-        <dependency>
-            <groupId>com.twitter</groupId>
-            <artifactId>storehaus-redis_2.10</artifactId>
-            <version>0.11.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.twitter</groupId>
-            <artifactId>finagle-redis_2.10</artifactId>
-            <version>6.26.0</version>
-        </dependency>
 
     </dependencies>
 
@@ -106,11 +64,6 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!--<archive>-->
-                    <!--<manifest>-->
-                    <!--<mainClass>&lt;!&ndash; MAIN CLASS &ndash;&gt;</mainClass>-->
-                    <!--</manifest>-->
-                    <!--</archive>-->
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
